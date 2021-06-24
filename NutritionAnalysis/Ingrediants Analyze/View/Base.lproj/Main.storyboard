@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ingredients View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="IngredientsViewController" id="BYZ-38-t0r" customClass="IngredientsViewController" customModule="NutritionAnalysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Fill All Ingredients you want Below " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOU-Me-Bco">
+                                <rect key="frame" x="49" y="76" width="316" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Example: Egg, 2, g  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YL-MK-ZYo">
+                                <rect key="frame" x="117.5" y="113" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="go3-zV-QNn">
+                                <rect key="frame" x="32" y="150" width="350" height="634"/>
+                                <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.30120398116438357" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKC-K7-IPu">
+                                <rect key="frame" x="60" y="800" width="294" height="30"/>
+                                <color key="backgroundColor" red="0.30980392159999998" green="0.71764705880000002" blue="0.96862745100000003" alpha="0.50973886986301364" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Analyze">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28763912670000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0YL-MK-ZYo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2wa-KY-aeZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="go3-zV-QNn" secondAttribute="trailing" constant="32" id="6GV-0F-IEE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wKC-K7-IPu" secondAttribute="bottom" constant="32" id="7T2-Ig-71A"/>
+                            <constraint firstItem="wKC-K7-IPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="CvN-ib-5GI"/>
+                            <constraint firstItem="wKC-K7-IPu" firstAttribute="top" secondItem="go3-zV-QNn" secondAttribute="bottom" constant="16" id="Fyl-bp-fPn"/>
+                            <constraint firstItem="kOU-Me-Bco" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="W9O-Au-z9s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKC-K7-IPu" secondAttribute="trailing" constant="60" id="dtN-E5-Afg"/>
+                            <constraint firstItem="0YL-MK-ZYo" firstAttribute="top" secondItem="kOU-Me-Bco" secondAttribute="bottom" constant="16" id="eez-O0-tqv"/>
+                            <constraint firstItem="kOU-Me-Bco" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nac-0i-BJo"/>
+                            <constraint firstItem="go3-zV-QNn" firstAttribute="top" secondItem="0YL-MK-ZYo" secondAttribute="bottom" constant="16" id="rfz-P8-u3v"/>
+                            <constraint firstItem="go3-zV-QNn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="t8G-Cd-tXJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AnalyzeButton" destination="wKC-K7-IPu" id="ffe-Vk-LcV"/>
+                        <outlet property="ingradientTV" destination="go3-zV-QNn" id="R9Y-Mj-iMx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

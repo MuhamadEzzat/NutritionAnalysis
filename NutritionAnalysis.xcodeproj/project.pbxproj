@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A4C4C0A2683F52F0043D33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C092683F52F0043D33C /* AppDelegate.swift */; };
+		4A4C4C0C2683F52F0043D33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C0B2683F52F0043D33C /* SceneDelegate.swift */; };
+		4A4C4C0E2683F52F0043D33C /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C0D2683F52F0043D33C /* IngredientsViewController.swift */; };
+		4A4C4C112683F52F0043D33C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C4C0F2683F52F0043D33C /* Main.storyboard */; };
+		4A4C4C142683F52F0043D33C /* NutritionAnalysis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C122683F52F0043D33C /* NutritionAnalysis.xcdatamodeld */; };
+		4A4C4C162683F52F0043D33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C4C152683F52F0043D33C /* Assets.xcassets */; };
+		4A4C4C192683F52F0043D33C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C4C172683F52F0043D33C /* LaunchScreen.storyboard */; };
+		4A4C4C242683F52F0043D33C /* NutritionAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C232683F52F0043D33C /* NutritionAnalysisTests.swift */; };
+		4A4C4C2F2683F52F0043D33C /* NutritionAnalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C2E2683F52F0043D33C /* NutritionAnalysisUITests.swift */; };
+		4A4C4C462683FA7F0043D33C /* IngrediantSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C452683FA7F0043D33C /* IngrediantSuccessModel.swift */; };
+		4A4C4C4B2683FACE0043D33C /* TotalDaily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C4A2683FACE0043D33C /* TotalDaily.swift */; };
+		4A4C4C61268404D00043D33C /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C60268404D00043D33C /* APIServices.swift */; };
+		4A4C4C662684050C0043D33C /* BaseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C652684050C0043D33C /* BaseErrorModel.swift */; };
+		4A4C4C6E268405530043D33C /* IngredientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C6D268405530043D33C /* IngredientsViewModel.swift */; };
+		4A4C4C76268405770043D33C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C75268405770043D33C /* Constants.swift */; };
+		4A4C4C7B268405C30043D33C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C7A268405C30043D33C /* Extensions.swift */; };
+		4A4C4C80268405CE0043D33C /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C4C7F268405CE0043D33C /* CustomAlert.swift */; };
+		4A52C91426841C5D008BBF3F /* SummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52C91326841C5D008BBF3F /* SummaryModel.swift */; };
+		4A52C91C26841D8B008BBF3F /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52C91B26841D8B008BBF3F /* SummaryViewController.swift */; };
+		4A52C92126841D97008BBF3F /* Summary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A52C92026841D97008BBF3F /* Summary.storyboard */; };
+		4A52C92F26841DD0008BBF3F /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52C92D26841DD0008BBF3F /* SummaryTableViewCell.swift */; };
+		4A52C93026841DD0008BBF3F /* SummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A52C92E26841DD0008BBF3F /* SummaryTableViewCell.xib */; };
+		4A52C93B26841EA5008BBF3F /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52C93A26841EA5008BBF3F /* SummaryViewModel.swift */; };
+		AAC5E30BB7F0B7E27EE19D02 /* Pods_NutritionAnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BDDC73AEE901B221EC8F4CD /* Pods_NutritionAnalysisTests.framework */; };
+		E6E04BF31400F4A7EBA96B20 /* Pods_NutritionAnalysis_NutritionAnalysisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F446061E2B6FDE97FE4123B8 /* Pods_NutritionAnalysis_NutritionAnalysisUITests.framework */; };
+		ECF5D8AFD194AEA0CFFF8C62 /* Pods_NutritionAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2521CB5247BF3AE94D75BD8A /* Pods_NutritionAnalysis.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A4C4C202683F52F0043D33C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A4C4BFE2683F52E0043D33C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A4C4C052683F52E0043D33C;
+			remoteInfo = NutritionAnalysis;
+		};
+		4A4C4C2B2683F52F0043D33C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A4C4BFE2683F52E0043D33C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A4C4C052683F52E0043D33C;
+			remoteInfo = NutritionAnalysis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AC033D93C6B5F6E267C5919 /* Pods-NutritionAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysis.debug.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysis/Pods-NutritionAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
+		2521CB5247BF3AE94D75BD8A /* Pods_NutritionAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutritionAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4C4C062683F52F0043D33C /* NutritionAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4C4C092683F52F0043D33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A4C4C0B2683F52F0043D33C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4A4C4C0D2683F52F0043D33C /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
+		4A4C4C102683F52F0043D33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A4C4C132683F52F0043D33C /* NutritionAnalysis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NutritionAnalysis.xcdatamodel; sourceTree = "<group>"; };
+		4A4C4C152683F52F0043D33C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A4C4C182683F52F0043D33C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A4C4C1A2683F52F0043D33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4C4C1F2683F52F0043D33C /* NutritionAnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionAnalysisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4C4C232683F52F0043D33C /* NutritionAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisTests.swift; sourceTree = "<group>"; };
+		4A4C4C252683F52F0043D33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4C4C2A2683F52F0043D33C /* NutritionAnalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutritionAnalysisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4C4C2E2683F52F0043D33C /* NutritionAnalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisUITests.swift; sourceTree = "<group>"; };
+		4A4C4C302683F52F0043D33C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4C4C452683FA7F0043D33C /* IngrediantSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngrediantSuccessModel.swift; sourceTree = "<group>"; };
+		4A4C4C4A2683FACE0043D33C /* TotalDaily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDaily.swift; sourceTree = "<group>"; };
+		4A4C4C60268404D00043D33C /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		4A4C4C652684050C0043D33C /* BaseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorModel.swift; sourceTree = "<group>"; };
+		4A4C4C6D268405530043D33C /* IngredientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewModel.swift; sourceTree = "<group>"; };
+		4A4C4C75268405770043D33C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A4C4C7A268405C30043D33C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4A4C4C7F268405CE0043D33C /* CustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		4A52C91326841C5D008BBF3F /* SummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryModel.swift; sourceTree = "<group>"; };
+		4A52C91B26841D8B008BBF3F /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		4A52C92026841D97008BBF3F /* Summary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Summary.storyboard; sourceTree = "<group>"; };
+		4A52C92D26841DD0008BBF3F /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		4A52C92E26841DD0008BBF3F /* SummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryTableViewCell.xib; sourceTree = "<group>"; };
+		4A52C93A26841EA5008BBF3F /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
+		7BDDC73AEE901B221EC8F4CD /* Pods_NutritionAnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutritionAnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A495F30F4A3A02CBF68E0A80 /* Pods-NutritionAnalysis-NutritionAnalysisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysis-NutritionAnalysisUITests.release.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysis-NutritionAnalysisUITests/Pods-NutritionAnalysis-NutritionAnalysisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADA53A06B4CEDD834076F3AF /* Pods-NutritionAnalysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysis.release.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysis/Pods-NutritionAnalysis.release.xcconfig"; sourceTree = "<group>"; };
+		DD280FB95DB9B539D3F2CC13 /* Pods-NutritionAnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysisTests/Pods-NutritionAnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
+		F446061E2B6FDE97FE4123B8 /* Pods_NutritionAnalysis_NutritionAnalysisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutritionAnalysis_NutritionAnalysisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5737FD7B7E05D71BD147B21 /* Pods-NutritionAnalysis-NutritionAnalysisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysis-NutritionAnalysisUITests.debug.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysis-NutritionAnalysisUITests/Pods-NutritionAnalysis-NutritionAnalysisUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F87DFF1048C7F6E1F0C859A0 /* Pods-NutritionAnalysisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutritionAnalysisTests.debug.xcconfig"; path = "Target Support Files/Pods-NutritionAnalysisTests/Pods-NutritionAnalysisTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A4C4C032683F52E0043D33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF5D8AFD194AEA0CFFF8C62 /* Pods_NutritionAnalysis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4C4C1C2683F52F0043D33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC5E30BB7F0B7E27EE19D02 /* Pods_NutritionAnalysisTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4C4C272683F52F0043D33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E04BF31400F4A7EBA96B20 /* Pods_NutritionAnalysis_NutritionAnalysisUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D6DD566D4BD15529CBCE7F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2521CB5247BF3AE94D75BD8A /* Pods_NutritionAnalysis.framework */,
+				F446061E2B6FDE97FE4123B8 /* Pods_NutritionAnalysis_NutritionAnalysisUITests.framework */,
+				7BDDC73AEE901B221EC8F4CD /* Pods_NutritionAnalysisTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A4C4BFD2683F52E0043D33C = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C082683F52F0043D33C /* NutritionAnalysis */,
+				4A4C4C222683F52F0043D33C /* NutritionAnalysisTests */,
+				4A4C4C2D2683F52F0043D33C /* NutritionAnalysisUITests */,
+				4A4C4C072683F52F0043D33C /* Products */,
+				CFE598DEB5A24624D9665801 /* Pods */,
+				1D6DD566D4BD15529CBCE7F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A4C4C072683F52F0043D33C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C062683F52F0043D33C /* NutritionAnalysis.app */,
+				4A4C4C1F2683F52F0043D33C /* NutritionAnalysisTests.xctest */,
+				4A4C4C2A2683F52F0043D33C /* NutritionAnalysisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A4C4C082683F52F0043D33C /* NutritionAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C0B2683F52F0043D33C /* SceneDelegate.swift */,
+				4A4C4C092683F52F0043D33C /* AppDelegate.swift */,
+				4A52C90F26841BE7008BBF3F /* Ingrediant Summary */,
+				4A4C4C402683F5430043D33C /* Ingrediants Analyze */,
+				4A4C4C442683F6560043D33C /* Utilities */,
+				4A4C4C172683F52F0043D33C /* LaunchScreen.storyboard */,
+				4A4C4C1A2683F52F0043D33C /* Info.plist */,
+				4A4C4C122683F52F0043D33C /* NutritionAnalysis.xcdatamodeld */,
+			);
+			path = NutritionAnalysis;
+			sourceTree = "<group>";
+		};
+		4A4C4C222683F52F0043D33C /* NutritionAnalysisTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C232683F52F0043D33C /* NutritionAnalysisTests.swift */,
+				4A4C4C252683F52F0043D33C /* Info.plist */,
+			);
+			path = NutritionAnalysisTests;
+			sourceTree = "<group>";
+		};
+		4A4C4C2D2683F52F0043D33C /* NutritionAnalysisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C2E2683F52F0043D33C /* NutritionAnalysisUITests.swift */,
+				4A4C4C302683F52F0043D33C /* Info.plist */,
+			);
+			path = NutritionAnalysisUITests;
+			sourceTree = "<group>";
+		};
+		4A4C4C402683F5430043D33C /* Ingrediants Analyze */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C432683F5DC0043D33C /* View Model */,
+				4A4C4C422683F5D30043D33C /* View */,
+				4A4C4C412683F5C90043D33C /* Model */,
+			);
+			path = "Ingrediants Analyze";
+			sourceTree = "<group>";
+		};
+		4A4C4C412683F5C90043D33C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C452683FA7F0043D33C /* IngrediantSuccessModel.swift */,
+				4A4C4C4A2683FACE0043D33C /* TotalDaily.swift */,
+				4A4C4C652684050C0043D33C /* BaseErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A4C4C422683F5D30043D33C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C0D2683F52F0043D33C /* IngredientsViewController.swift */,
+				4A4C4C0F2683F52F0043D33C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A4C4C432683F5DC0043D33C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C6D268405530043D33C /* IngredientsViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		4A4C4C442683F6560043D33C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C4C7F268405CE0043D33C /* CustomAlert.swift */,
+				4A4C4C7A268405C30043D33C /* Extensions.swift */,
+				4A4C4C152683F52F0043D33C /* Assets.xcassets */,
+				4A4C4C60268404D00043D33C /* APIServices.swift */,
+				4A4C4C75268405770043D33C /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4A52C90F26841BE7008BBF3F /* Ingrediant Summary */ = {
+			isa = PBXGroup;
+			children = (
+				4A52C91226841C09008BBF3F /* View Model */,
+				4A52C91126841C03008BBF3F /* View  */,
+				4A52C91026841BFD008BBF3F /* Model */,
+			);
+			path = "Ingrediant Summary";
+			sourceTree = "<group>";
+		};
+		4A52C91026841BFD008BBF3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A52C91326841C5D008BBF3F /* SummaryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A52C91126841C03008BBF3F /* View  */ = {
+			isa = PBXGroup;
+			children = (
+				4A52C93726841DF0008BBF3F /* Cell */,
+				4A52C91B26841D8B008BBF3F /* SummaryViewController.swift */,
+				4A52C92026841D97008BBF3F /* Summary.storyboard */,
+			);
+			path = "View ";
+			sourceTree = "<group>";
+		};
+		4A52C91226841C09008BBF3F /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A52C93A26841EA5008BBF3F /* SummaryViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		4A52C93726841DF0008BBF3F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A52C92D26841DD0008BBF3F /* SummaryTableViewCell.swift */,
+				4A52C92E26841DD0008BBF3F /* SummaryTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CFE598DEB5A24624D9665801 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AC033D93C6B5F6E267C5919 /* Pods-NutritionAnalysis.debug.xcconfig */,
+				ADA53A06B4CEDD834076F3AF /* Pods-NutritionAnalysis.release.xcconfig */,
+				F5737FD7B7E05D71BD147B21 /* Pods-NutritionAnalysis-NutritionAnalysisUITests.debug.xcconfig */,
+				A495F30F4A3A02CBF68E0A80 /* Pods-NutritionAnalysis-NutritionAnalysisUITests.release.xcconfig */,
+				F87DFF1048C7F6E1F0C859A0 /* Pods-NutritionAnalysisTests.debug.xcconfig */,
+				DD280FB95DB9B539D3F2CC13 /* Pods-NutritionAnalysisTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A4C4C052683F52E0043D33C /* NutritionAnalysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A4C4C332683F52F0043D33C /* Build configuration list for PBXNativeTarget "NutritionAnalysis" */;
+			buildPhases = (
+				BB6EC0CE25ECF541B148A8D9 /* [CP] Check Pods Manifest.lock */,
+				4A4C4C022683F52E0043D33C /* Sources */,
+				4A4C4C032683F52E0043D33C /* Frameworks */,
+				4A4C4C042683F52E0043D33C /* Resources */,
+				C7F79F1BA5C15225A580E1DE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NutritionAnalysis;
+			productName = NutritionAnalysis;
+			productReference = 4A4C4C062683F52F0043D33C /* NutritionAnalysis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A4C4C1E2683F52F0043D33C /* NutritionAnalysisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A4C4C362683F52F0043D33C /* Build configuration list for PBXNativeTarget "NutritionAnalysisTests" */;
+			buildPhases = (
+				9301F787BDD8607FE47821A8 /* [CP] Check Pods Manifest.lock */,
+				4A4C4C1B2683F52F0043D33C /* Sources */,
+				4A4C4C1C2683F52F0043D33C /* Frameworks */,
+				4A4C4C1D2683F52F0043D33C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A4C4C212683F52F0043D33C /* PBXTargetDependency */,
+			);
+			name = NutritionAnalysisTests;
+			productName = NutritionAnalysisTests;
+			productReference = 4A4C4C1F2683F52F0043D33C /* NutritionAnalysisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A4C4C292683F52F0043D33C /* NutritionAnalysisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A4C4C392683F52F0043D33C /* Build configuration list for PBXNativeTarget "NutritionAnalysisUITests" */;
+			buildPhases = (
+				CD78AF24178228F6B028689D /* [CP] Check Pods Manifest.lock */,
+				4A4C4C262683F52F0043D33C /* Sources */,
+				4A4C4C272683F52F0043D33C /* Frameworks */,
+				4A4C4C282683F52F0043D33C /* Resources */,
+				6709D428E8C3604E2EC5FBAF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A4C4C2C2683F52F0043D33C /* PBXTargetDependency */,
+			);
+			name = NutritionAnalysisUITests;
+			productName = NutritionAnalysisUITests;
+			productReference = 4A4C4C2A2683F52F0043D33C /* NutritionAnalysisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A4C4BFE2683F52E0043D33C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					4A4C4C052683F52E0043D33C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					4A4C4C1E2683F52F0043D33C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 4A4C4C052683F52E0043D33C;
+					};
+					4A4C4C292683F52F0043D33C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 4A4C4C052683F52E0043D33C;
+					};
+				};
+			};
+			buildConfigurationList = 4A4C4C012683F52E0043D33C /* Build configuration list for PBXProject "NutritionAnalysis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A4C4BFD2683F52E0043D33C;
+			productRefGroup = 4A4C4C072683F52F0043D33C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A4C4C052683F52E0043D33C /* NutritionAnalysis */,
+				4A4C4C1E2683F52F0043D33C /* NutritionAnalysisTests */,
+				4A4C4C292683F52F0043D33C /* NutritionAnalysisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A4C4C042683F52E0043D33C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4C4C192683F52F0043D33C /* LaunchScreen.storyboard in Resources */,
+				4A4C4C162683F52F0043D33C /* Assets.xcassets in Resources */,
+				4A52C93026841DD0008BBF3F /* SummaryTableViewCell.xib in Resources */,
+				4A4C4C112683F52F0043D33C /* Main.storyboard in Resources */,
+				4A52C92126841D97008BBF3F /* Summary.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4C4C1D2683F52F0043D33C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4C4C282683F52F0043D33C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6709D428E8C3604E2EC5FBAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutritionAnalysis-NutritionAnalysisUITests/Pods-NutritionAnalysis-NutritionAnalysisUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutritionAnalysis-NutritionAnalysisUITests/Pods-NutritionAnalysis-NutritionAnalysisUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutritionAnalysis-NutritionAnalysisUITests/Pods-NutritionAnalysis-NutritionAnalysisUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9301F787BDD8607FE47821A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NutritionAnalysisTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB6EC0CE25ECF541B148A8D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NutritionAnalysis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7F79F1BA5C15225A580E1DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutritionAnalysis/Pods-NutritionAnalysis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutritionAnalysis/Pods-NutritionAnalysis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutritionAnalysis/Pods-NutritionAnalysis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD78AF24178228F6B028689D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NutritionAnalysis-NutritionAnalysisUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A4C4C022683F52E0043D33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4C4C6E268405530043D33C /* IngredientsViewModel.swift in Sources */,
+				4A4C4C462683FA7F0043D33C /* IngrediantSuccessModel.swift in Sources */,
+				4A52C91426841C5D008BBF3F /* SummaryModel.swift in Sources */,
+				4A4C4C0E2683F52F0043D33C /* IngredientsViewController.swift in Sources */,
+				4A4C4C80268405CE0043D33C /* CustomAlert.swift in Sources */,
+				4A52C91C26841D8B008BBF3F /* SummaryViewController.swift in Sources */,
+				4A4C4C4B2683FACE0043D33C /* TotalDaily.swift in Sources */,
+				4A4C4C0A2683F52F0043D33C /* AppDelegate.swift in Sources */,
+				4A4C4C76268405770043D33C /* Constants.swift in Sources */,
+				4A4C4C142683F52F0043D33C /* NutritionAnalysis.xcdatamodeld in Sources */,
+				4A4C4C61268404D00043D33C /* APIServices.swift in Sources */,
+				4A52C93B26841EA5008BBF3F /* SummaryViewModel.swift in Sources */,
+				4A4C4C0C2683F52F0043D33C /* SceneDelegate.swift in Sources */,
+				4A4C4C7B268405C30043D33C /* Extensions.swift in Sources */,
+				4A52C92F26841DD0008BBF3F /* SummaryTableViewCell.swift in Sources */,
+				4A4C4C662684050C0043D33C /* BaseErrorModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4C4C1B2683F52F0043D33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4C4C242683F52F0043D33C /* NutritionAnalysisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4C4C262683F52F0043D33C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4C4C2F2683F52F0043D33C /* NutritionAnalysisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A4C4C212683F52F0043D33C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A4C4C052683F52E0043D33C /* NutritionAnalysis */;
+			targetProxy = 4A4C4C202683F52F0043D33C /* PBXContainerItemProxy */;
+		};
+		4A4C4C2C2683F52F0043D33C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A4C4C052683F52E0043D33C /* NutritionAnalysis */;
+			targetProxy = 4A4C4C2B2683F52F0043D33C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A4C4C0F2683F52F0043D33C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A4C4C102683F52F0043D33C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A4C4C172683F52F0043D33C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A4C4C182683F52F0043D33C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A4C4C312683F52F0043D33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A4C4C322683F52F0043D33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A4C4C342683F52F0043D33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC033D93C6B5F6E267C5919 /* Pods-NutritionAnalysis.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6EW4588HN;
+				INFOPLIST_FILE = NutritionAnalysis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ezzat.NutritionAnalysis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A4C4C352683F52F0043D33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA53A06B4CEDD834076F3AF /* Pods-NutritionAnalysis.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6EW4588HN;
+				INFOPLIST_FILE = NutritionAnalysis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ezzat.NutritionAnalysis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A4C4C372683F52F0043D33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87DFF1048C7F6E1F0C859A0 /* Pods-NutritionAnalysisTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6EW4588HN;
+				INFOPLIST_FILE = NutritionAnalysisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ezzat.NutritionAnalysisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutritionAnalysis.app/NutritionAnalysis";
+			};
+			name = Debug;
+		};
+		4A4C4C382683F52F0043D33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD280FB95DB9B539D3F2CC13 /* Pods-NutritionAnalysisTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6EW4588HN;
+				INFOPLIST_FILE = NutritionAnalysisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ezzat.NutritionAnalysisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutritionAnalysis.app/NutritionAnalysis";
+			};
+			name = Release;
+		};
+		4A4C4C3A2683F52F0043D33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5737FD7B7E05D71BD147B21 /* Pods-NutritionAnalysis-NutritionAnalysisUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6EW4588HN;
+				INFOPLIST_FILE = NutritionAnalysisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ezzat.NutritionAnalysisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NutritionAnalysis;
+			};
+			name = Debug;
+		};
+		4A4C4C3B2683F52F0043D33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A495F30F4A3A02CBF68E0A80 /* Pods-NutritionAnalysis-NutritionAnalysisUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V6EW4588HN;
+				INFOPLIST_FILE = NutritionAnalysisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ezzat.NutritionAnalysisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NutritionAnalysis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A4C4C012683F52E0043D33C /* Build configuration list for PBXProject "NutritionAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A4C4C312683F52F0043D33C /* Debug */,
+				4A4C4C322683F52F0043D33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A4C4C332683F52F0043D33C /* Build configuration list for PBXNativeTarget "NutritionAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A4C4C342683F52F0043D33C /* Debug */,
+				4A4C4C352683F52F0043D33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A4C4C362683F52F0043D33C /* Build configuration list for PBXNativeTarget "NutritionAnalysisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A4C4C372683F52F0043D33C /* Debug */,
+				4A4C4C382683F52F0043D33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A4C4C392683F52F0043D33C /* Build configuration list for PBXNativeTarget "NutritionAnalysisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A4C4C3A2683F52F0043D33C /* Debug */,
+				4A4C4C3B2683F52F0043D33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4A4C4C122683F52F0043D33C /* NutritionAnalysis.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A4C4C132683F52F0043D33C /* NutritionAnalysis.xcdatamodel */,
+			);
+			currentVersion = 4A4C4C132683F52F0043D33C /* NutritionAnalysis.xcdatamodel */;
+			path = NutritionAnalysis.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4A4C4BFE2683F52E0043D33C /* Project object */;
+}
