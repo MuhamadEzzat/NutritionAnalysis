@@ -18,6 +18,8 @@ class SummaryViewController: UIViewController {
     
     let summaryTableViewCell = "SummaryTableViewCell"
     let summaryViewModel = SummaryViewModel()
+    
+    // Empty Array (Memory Management)
     let disposeBag = DisposeBag()
     
     var ingrInput = ""
@@ -40,12 +42,15 @@ class SummaryViewController: UIViewController {
     }
     
     func setupTableView() {
-        //branchesTableView.dataSource = self
         summaryTableView.register(UINib(nibName: summaryTableViewCell, bundle: nil), forCellReuseIdentifier: summaryTableViewCell)
     }
+    
+    
     func bindToHiddenTable() {
         summaryViewModel.isTableHiddenObservable.bind(to: self.summaryContainerView.rx.isHidden).disposed(by: disposeBag)
     }
+    
+    
     func subscribeToLoading() {
         summaryViewModel.loadingBehavior.subscribe(onNext: { (isLoading) in
             if isLoading {
@@ -55,6 +60,7 @@ class SummaryViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
     }
+    
     func subscribeToResponse() {
         self.summaryViewModel.summaryModelObservable
             .bind(to: self.summaryTableView
@@ -62,7 +68,6 @@ class SummaryViewController: UIViewController {
                 .items(cellIdentifier: summaryTableViewCell,
                        cellType: SummaryTableViewCell.self)) { row, summary, cell in
                         print(row, "dsfdsf")
-//                        cell.textLabel?.text = branch.name
                 cell.calLbl.text = "Calories: " + summary.label
                 cell.foodnameLbl.text = "Food: " + self.ingrInput
                 cell.qtyLbk.text = "Quantity: " + "\(summary.quantity)"
@@ -72,6 +77,7 @@ class SummaryViewController: UIViewController {
         }
         .disposed(by: disposeBag)
     }
+    
     func subscribeToSummarySelection() {
         Observable
             .zip(summaryTableView.rx.itemSelected, summaryTableView.rx.modelSelected(TotalDaily.self))

@@ -12,8 +12,8 @@ import RxCocoa
 import MBProgressHUD
 
 class IngredientsViewController: UIViewController {
-    @IBOutlet weak var ingradientTV: UITextView!
     
+    @IBOutlet weak var ingradientTV: UITextView!
     @IBOutlet weak var AnalyzeButton: UIButton!
     
     // Empty Array (Memory Management)
@@ -21,6 +21,7 @@ class IngredientsViewController: UIViewController {
 
     
     var ingredientvm = IngredientsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,9 +52,7 @@ class IngredientsViewController: UIViewController {
     func subscribetoresponse(){
         ingredientvm.ingredients.subscribe(onNext: {
             print($0.calories, "sadwd")
-            
-//            self.ingradientTV.text = self.ingradientTV.text + " \n\n\("Calories:" + "\($0.calories)") \n\("Weight:" + "\($0.totalWeight)") \n\("Quantity: " + "\(String(describing: $0.totalNutrients["PROCNT"]!.quantity ?? 0))")  \(String(describing: $0.totalNutrients["PROCNT"]!.unit ?? ""))"
-            
+                        
             if let homeVC = UIStoryboard(name: "Summary", bundle: nil).instantiateViewController(withIdentifier: "SummaryViewController") as? SummaryViewController {
                 homeVC.ingrInput = self.ingradientTV.text
                 self.present(homeVC, animated: true)

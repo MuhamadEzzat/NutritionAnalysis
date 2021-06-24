@@ -13,18 +13,22 @@ import Alamofire
 class SummaryViewModel{
     var loadingBehavior = BehaviorRelay<Bool>(value: false)
         
-        private var isTableHidden = BehaviorRelay<Bool>(value: false)
-        private var summaryModelSubject = PublishSubject<[TotalDaily]>()
-        
-        var summaryModelObservable: Observable<[TotalDaily]> {
-            return summaryModelSubject
-        }
-        var isTableHiddenObservable: Observable<Bool> {
-            return isTableHidden.asObservable()
-        }
+    // Encapsulated Response summary Model & Table Hidden Boolean
+    private var isTableHidden = BehaviorRelay<Bool>(value: false)
+    var isTableHiddenObservable: Observable<Bool> {
+        return isTableHidden.asObservable()
+    }
     
+    private var summaryModelSubject = PublishSubject<[TotalDaily]>()
+    var summaryModelObservable: Observable<[TotalDaily]> {
+        return summaryModelSubject
+    }
+    
+    
+    // Ingrediants User has entered
     var inputIngr = BehaviorRelay<String>(value: "")
         
+    // get data by GET method
         func getData() {
             
             print(inputIngr.value, "dasF")

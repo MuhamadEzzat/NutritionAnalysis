@@ -46,23 +46,20 @@ class IngredientsViewModel {
     func getData(){
         // Convert string into array
         let line = igrediantsBehavior.value.components(separatedBy: "\n")
-        UserDefaults.standard.setValue(line, forKey: "ingrArray")
 
         loadingBehavior.accept(true)
         
         let params = ["ingr" : line]
-//        let params = ["ingr" : ["Rice, 3, g"]]
         
         let header = ["Content-Type" : "application/json",
                       "Accept": "application/json"
                       ]
-//        print(params, "sasdsad", header)
-    
-        APIServices.instance.getData(url: urlImgredients, method: .post, params: params, encoding: JSONEncoding.default, headers: header) {  (IngrediantsModel:IngredientsSuccessModel?,baseerror: BaseErrorModel?, error) in
+        
+        APIServices.instance.getData(url: urlImgredients, method: .post, params: params, encoding: JSONEncoding.default, headers: header) { [weak self] (IngrediantsModel:IngredientsSuccessModel?,baseerror: BaseErrorModel?, error) in
             
             
             // Memory leak
-//            guard let self = self else {return}
+            guard let self = self else {return}
             
             self.loadingBehavior.accept(false)
             
@@ -75,7 +72,6 @@ class IngredientsViewModel {
                 guard let IngrediantsModel = IngrediantsModel else{return}
                 self.ingredientsmodel.onNext(IngrediantsModel)
                 print("Done")
-//                UserDefaults.standard.setValue(IngrediantsModel, forKey: "IngradientResponse")
             }
         }
     }
